@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Tilt+Warp:XROT@45&display=swap');
+
+.about-container {
+  width: 100%;
+  min-height: 105vh; 
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.about-content {
+  width: 100%;
+  display: flex;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.about-text {
+  flex: 1;
+  width: 50%;
+  padding: 40px;
+  background-color: #EBDFAF;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.about-image {
+  flex: 1;
+  width: 50%;
+  height: auto;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 20px; 
+}
+
+.about-image img {
+  width: 99%; 
+  height: 99%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px; 
+}
+
+
+.about-title {
+  font-family: 'Modak', cursive; 
+  color: black;
+  font-size: 2.5rem;
+  text-align: left;
+  margin-bottom: 30px;
+  font-weight: 700;
+  margin-top: 15%;
+}
+
+.about-paragraph {
+  color: black;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  max-width: 90%;
+}
+
+.about-paragraph strong {
+  color: black;
+  font-weight: 600;
+}
+
+.about-button {
+  background-color: #CC8F2F;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Tilt Warp', sans-serif;
+  align-self: center; 
+  margin-top: 20px; 
+}
+
+.about-button:hover {
+  background-color: #b47d2a;
+  transform: scale(1.05); 
+}
+
+@media (max-width: 968px) {
+  .about-content {
+      flex-direction: column;
+  }
+
+  .about-text,
+  .about-image {
+      width: 100%;
+      border: none;
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+  }
+
+  .about-text {
+      border-bottom: none;
+  }
+
+  .about-image {
+      height: 50vh;
+  }
+
+  .about-image img {
+      width: 90%;
+      height: 90%;
+  }
+
+  .about-title {
+      text-align: center;
+      font-size: 2rem;
+  }
+  .about-button {
+    margin: 20px auto; 
+    padding: 10px 25px;
+    font-size: 1rem;
+}
+}
+
+@media (max-width: 768px) {
+  .about-container {
+      margin-top: 56px;
+  }
+
+  .about-paragraph {
+      font-size: 1rem;
+  }
+}

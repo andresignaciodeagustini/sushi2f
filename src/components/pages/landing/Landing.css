@@ -1,0 +1,103 @@
+/* Landing.css */
+.page-container {
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #EBDFAF;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    margin-top: 1%;
+}
+
+.landing-container {
+    width: 200vh;
+    height: 90vh;
+    background-image: url(../../../assets/img/sushi8.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 175px 175px 20px 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.landing-content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.landing-title {
+    position: absolute; 
+    z-index: 2; 
+    font-family: 'Tilt Warp', sans-serif;
+    color: black;
+    font-size: 18rem;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    margin-bottom: -5%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    margin: 0;
+    
+    white-space: nowrap;
+    top: 14%;
+
+}
+@media (max-width: 768px) {
+    .page-container {
+        padding: 10px;
+    }
+
+    .landing-container {
+        width: 95vw;
+        height: 70vh;
+        border-radius: 50px 50px 20px 20px;
+        margin-top: -5%;
+    }
+
+    .landing-title {
+        font-size: 10rem;
+        top: 6%;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-container {
+        padding: 5px;
+    }
+
+    .landing-container {
+        width: 95vw;
+        height: 60vh;
+        border-radius: 30px 30px 15px 15px;
+        margin-top: 5%;
+    }
+
+    .landing-title {
+        font-size: 8rem;
+        top: 6%;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .landing-container {
+        height: 70vh;
+        border-radius: 20px 20px 10px 10px;
+        margin-top:-20%
+    }
+
+    .landing-title {
+        font-size: 4rem;
+        top: 9%;
+    }
+}

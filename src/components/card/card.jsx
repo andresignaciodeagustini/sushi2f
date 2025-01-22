@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import './Card.css';
+import './card.css';
 
 const Card = ({ payload, onSendMessage }) => {
   const { header, description, image, price, type = 'primary' } = payload;
